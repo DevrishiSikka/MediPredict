@@ -1,0 +1,17 @@
+click @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/click_1699473800648/work
+colorama @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/colorama_1699472650914/work
+Flask @ file:///C:/b/abs_efc024w7fv/croot/flask_1702980041157/work
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+Jinja2 @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/jinja2_1707426091452/work
+joblib @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/joblib_1699481664681/work
+MarkupSafe @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/markupsafe_1707425732791/work
+mkl-fft @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/mkl_fft_1699473528480/work
+mkl-random @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/mkl_random_1699473588250/work
+mkl-service==2.4.0
+numpy @ file:///C:/b/abs_16b2j7ad8n/croot/numpy_and_numpy_base_1704311752418/work/dist/numpy-1.26.3-cp312-cp312-win_amd64.whl#sha256=698ee7d3a0df0d67b6b5196985719e4a06dbaf5d90f3a62cb13950acc4bfb9ec
+scikit-learn @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/scikit-learn_1699496316170/work
+scipy @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/scipy_1699494946351/work/dist/scipy-1.11.3-cp312-cp312-win_amd64.whl#sha256=e55200dbad5ccc0f329d5200e4f3619aa99e558927f65e1f77f70d19831c9b91
+setuptools==68.2.2
+threadpoolctl @ file:///Users/ktietz/demo/mc3/conda-bld/threadpoolctl_1629802263681/work
+Werkzeug @ file:///C:/b/abs_3901hwqcw0/croot/werkzeug_1706210134718/work
+wheel==0.41.2

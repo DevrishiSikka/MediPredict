@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parkinson's Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f8f9fa;
+      }
+
+      .form-container {
+        max-width: 600px;
+        padding: 30px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-container .form-group label {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .form-container .btn-primary {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      {% if parkinson %}
+      <h1 style="color: red">Patient has Parkinsons</h1>
+      {% endif %}
+      <h2>Parkinson's Form</h2>
+      <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.fo_hz.label }} {{ form.fo_hz(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.fhi_hz.label }} {{ form.fhi_hz(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.flo_hz.label }} {{ form.flo_hz(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.jitter_percent.label }} {{
+            form.jitter_percent(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.jitter_abs.label }} {{ form.jitter_abs(class="form-control")
+            }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.rap.label }} {{ form.rap(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.ppq.label }} {{ form.ppq(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.ddp.label }} {{ form.ddp(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.shimmer.label }} {{ form.shimmer(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.shimmer_db.label }} {{ form.shimmer_db(class="form-control")
+            }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.apq3.label }} {{ form.apq3(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.apq5.label }} {{ form.apq5(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.apq.label }} {{ form.apq(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.dda.label }} {{ form.dda(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.nhr.label }} {{ form.nhr(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.hnr.label }} {{ form.hnr(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.rpde.label }} {{ form.rpde(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.dfa.label }} {{ form.dfa(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.spread1.label }} {{ form.spread1(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.spread2.label }} {{ form.spread2(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{ form.d2.label }} {{ form.d2(class="form-control") }}
+          </div>
+          <div class="form-group col-md-6">
+            {{ form.ppe.label }} {{ form.ppe(class="form-control") }}
+          </div>
+        </div>
+        <div class="form-group">{{ form.submit(class="btn btn-primary") }}</div>
+      </form>
+    </div>
+  </body>
+</html>
